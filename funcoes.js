@@ -207,3 +207,19 @@ function ex11(){
         alert("o salário permanece: R$" + sal)
     }
 }
+
+
+/* ex 12 */
+
+function ex12(){
+    var salb = Number(document.getElementByID("salb").value);
+    if(salb<=350){
+        alert("salário a receber: R$" + Number((salb + 100)*0.93).toFixed(2));
+    }else if(salb<600){
+        alert("salário a receber: R$" + Number((salb + 75)*0.93).toFixed(2));
+    }else if(salb<=900){
+        alert("salário a receber: R$" + Number((salb + 50)*0.93).toFixed(2));
+    }else if(salb>900){
+        alert("salário a receber: R$" + Number((salb + 35)*0.93).toFixed(2));
+    }
+}
